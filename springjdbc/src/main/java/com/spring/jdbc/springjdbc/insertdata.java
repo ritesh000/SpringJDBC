@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.spring.dao.studentdao;
 import com.spring.jdbc.entity.student;
 
-public class test {
+public class insertdata {
 
 	public static void main(String[] args) {
 

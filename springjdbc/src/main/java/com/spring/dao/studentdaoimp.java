@@ -22,4 +22,11 @@ public class studentdaoimp implements studentdao {
 		this.jdbcTemplate = jdbcTemplate;
 	}
 
+	public int change(student student) {
+		
+		String query="update student set name=? ,city=? where id=?";
+		int r=this.jdbcTemplate.update(query,student.getName(),student.getCity(),student.getId());
+		return r;
+	}
+
 }
