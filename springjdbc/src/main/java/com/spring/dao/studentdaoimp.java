@@ -29,4 +29,13 @@ public class studentdaoimp implements studentdao {
 		return r;
 	}
 
+	public int delete(int studentID) {
+		String query="delete from student where id=?";
+		int r=this.jdbcTemplate.update(query,studentID);
+		return r;
+		
+	}
+
+	
+
 }

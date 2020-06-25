@@ -13,12 +13,30 @@ public class insertdata {
 		studentdao studentdao = (studentdao) context.getBean("studentdao");
 
 		student stu = new student();
-		stu.setId(234);
-		stu.setName("kap");
-		stu.setCity("mp");
-		int result = studentdao.insert(stu);
-		System.out.println("student added " + result);
-
+		/*
+		 * stu.setId(234);
+		 * stu.setName("kap");
+		 * stu.setCity("mp");
+		 * int result = studentdao.insert(stu);
+		 * System.out.println("student added " + result);
+		 */
+		
+		
+		
+		//update  
+		/*
+		 * stu.setId(234); 
+		 * stu.setName("ritesh"); 
+		 * stu.setCity("kota"); int
+		 * result=studentdao.change(stu); 
+		 * System.out.println("data change "+result);
+		 */
+		
+		//delete
+		
+		int result =studentdao.delete(234);
+		System.out.println("delete "+result);
+		
 	}
 
 }
